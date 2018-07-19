@@ -1,0 +1,70 @@
+{
+  "_from": "cordova-plugin-webengage@0.0.8",
+  "_id": "cordova-plugin-webengage@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha1-2yJlB5reCfcyEj9Y/eKsxg45E9A=",
+  "_location": "/cordova-plugin-webengage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-webengage@0.0.8",
+    "name": "cordova-plugin-webengage",
+    "escapedName": "cordova-plugin-webengage",
+    "rawSpec": "0.0.8",
+    "saveSpec": null,
+    "fetchSpec": "0.0.8"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-webengage/-/cordova-plugin-webengage-0.0.8.tgz",
+  "_shasum": "db2265079ade09f732123f58fde2acc60e3913d0",
+  "_spec": "cordova-plugin-webengage@0.0.8",
+  "_where": "/Users/ashwin/ionic_3/WebEngageTest",
+  "author": {
+    "name": "arpit@webklipper.com"
+  },
+  "bugs": {
+    "url": "https://github.com/WebEngage/cordova-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "plist": "^2.0.1",
+    "xml2js": "^0.4.17"
+  },
+  "deprecated": false,
+  "description": "WebEngage Plugin that integrates with WebEngage native SDKs(Android & iOS) to provide engagement capabilities for hybrid applications built with PhoneGap/Cordova",
+  "devDependencies": {},
+  "engines": {
+    "cordovaDependencies": {
+      "0.0.1": {
+        "cordova-android": ">=4.1.0",
+        "cordova-ios": ">=4.0.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/WebEngage/cordova-plugin#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android-webengage",
+    "cordova-ios-webengage",
+    "webengage",
+    "push-notifications",
+    "analytics",
+    "engagement",
+    "notifications"
+  ],
+  "license": "ISC",
+  "main": "WebEngagePlugin.js",
+  "name": "cordova-plugin-webengage",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WebEngage/cordova-plugin.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.8"
+}

@@ -1,0 +1,14 @@
+<config>
+    <licenseCode>~13410522d</licenseCode>
+    <debug>true</debug>
+    <ios>
+    	<backgroundLocation>false</backgroundLocation>
+        <apnsAutoRegister>true</apnsAutoRegister>
+    	<WEGEnableLocationAuthorizationRequest>NO</WEGEnableLocationAuthorizationRequest>
+    </ios>
+    <android>
+        <packageName>ionic.webengage.test</packageName>
+        <autoPushRegister>true</autoPushRegister>
+        <pushProjectNumber>76932207205</pushProjectNumber>
+    </android>
+</config>
