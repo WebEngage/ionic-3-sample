@@ -1,14 +1,103 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      WebEngage
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  Welcome to WebEngage
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    If you get lost, the <a href="https://docs.webengage.com/docs/cordova-getting-started">docs</a> will be your guide.
   </p>
+
+  <!-- User login -->
+  <ion-row center>  
+      <ion-col text-center>
+        <input type="text" placeholder="user id" [(ngModel)]="uid" value="{{userid}}"/>
+      </ion-col>
+  </ion-row>
+  <ion-row center *ngIf="!userid">  
+      <ion-col text-center>
+        <button #loginButton ion-button (click)="login(uid)"> LOGIN </button>
+      </ion-col>
+  </ion-row>
+  <ion-row center *ngIf="userid">  
+      <ion-col text-center>
+        <button #logoutButton ion-button button-block center (click)="logout()"> LOGOUT </button>
+      </ion-col>
+  </ion-row>
+
+  <!-- User system attribute -->
+  <div class = "list">
+    <ion-row center>  
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="email" placeholder="email" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>
+      <ion-col text-center>
+        <button ion-button (click)="setUserEmail(email)"> SET </button>
+      </ion-col>
+    </ion-row>
+
+    <!-- User custom attribute -->
+    <ion-row center>
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="custom_key" placeholder="custom key" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="custom_value" placeholder="custom value" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>
+      <ion-col text-center>
+        <button ion-button (click)="setUserAttribute(custom_key, custom_value)"> SET </button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <!-- Event -->
+  <div class = "list">
+    <ion-row center>  
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="event" placeholder="event" />
+      </ion-col>
+    </ion-row>
+ 
+    <ion-row center>  
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="key1" placeholder="key 1" />
+      </ion-col>
+    </ion-row>
+    <ion-row center>  
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="value1" placeholder="value 1" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>  
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="key2" placeholder="key 2" />
+      </ion-col>
+    </ion-row>
+    <ion-row center>  
+      <ion-col text-center>
+        <input type="text" [(ngModel)]="value2" placeholder="value 2" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row center>  
+        <ion-col text-center>
+          <button ion-button (click)="track(event, key1, value1, key2, value2)"> TRACK </button>
+        </ion-col>
+    </ion-row>
+  </div>
+
 </ion-content>
