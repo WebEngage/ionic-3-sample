@@ -1,5 +1,5 @@
 <config>
-    <licenseCode>~13410522d</licenseCode>
+    <licenseCode>YOUR-LICENSE-CODE</licenseCode>
     <debug>true</debug>
     <ios>
     	<backgroundLocation>false</backgroundLocation>
@@ -9,6 +9,6 @@
     <android>
         <packageName>ionic.webengage.test</packageName>
         <autoPushRegister>true</autoPushRegister>
-        <pushProjectNumber>76932207205</pushProjectNumber>
+        <pushProjectNumber>YOUR-PUSH-PROJECT-NUMBER</pushProjectNumber>
     </android>
 </config>
