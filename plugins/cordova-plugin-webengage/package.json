@@ -1,27 +1,27 @@
 {
-  "_from": "cordova-plugin-webengage@0.0.8",
-  "_id": "cordova-plugin-webengage@0.0.8",
+  "_from": "cordova-plugin-webengage@1.0.0",
+  "_id": "cordova-plugin-webengage@1.0.0",
   "_inBundle": false,
-  "_integrity": "sha1-2yJlB5reCfcyEj9Y/eKsxg45E9A=",
+  "_integrity": "sha512-o/3z4uG4eufNtqnqKmfFq6gf3lrrfCxgsaRM9muJyERO98JWojoxe6CkhNJZ9YP5hLOaXOQ0OlimalzBuUyAiQ==",
   "_location": "/cordova-plugin-webengage",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "cordova-plugin-webengage@0.0.8",
+    "raw": "cordova-plugin-webengage@1.0.0",
     "name": "cordova-plugin-webengage",
     "escapedName": "cordova-plugin-webengage",
-    "rawSpec": "0.0.8",
+    "rawSpec": "1.0.0",
     "saveSpec": null,
-    "fetchSpec": "0.0.8"
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-webengage/-/cordova-plugin-webengage-0.0.8.tgz",
-  "_shasum": "db2265079ade09f732123f58fde2acc60e3913d0",
-  "_spec": "cordova-plugin-webengage@0.0.8",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-webengage/-/cordova-plugin-webengage-1.0.0.tgz",
+  "_shasum": "c82c4300920d7b9921cba5801c44dde29e359b6b",
+  "_spec": "cordova-plugin-webengage@1.0.0",
   "_where": "/Users/ashwin/ionic_3/WebEngageTest",
   "author": {
     "name": "arpit@webklipper.com"
@@ -66,5 +66,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.0.8"
+  "version": "1.0.0"
 }

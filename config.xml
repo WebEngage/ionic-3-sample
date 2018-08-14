@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ionic.webengage.test" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>WebEngageTest</name>
+<widget id="ionic.webengage.test" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -39,6 +39,26 @@
         <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <meta-data android:name="com.webengage.sdk.android.key" android:value="YOUR-LICENSE-CODE" />
+            <meta-data android:name="com.webengage.sdk.android.debug" android:value="true" />
+            <meta-data android:name="com.webengage.sdk.android.project_number" android:value="$GCM_PROJECT_NUMBER" />
+            <meta-data android:name="com.webengage.sdk.android.location_tracking" android:value="true" />
+            <meta-data android:name="com.webengage.sdk.android.auto_gcm_registration" android:value="true" />
+            <meta-data android:name="com.webengage.sdk.android.alternate_interface_id" android:value="false" />
+            <receiver android:name="com.webengage.sdk.android.WebEngagePushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+                <intent-filter>
+                    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                    <category android:name="${applicationId}" />
+                </intent-filter>
+            </receiver>
+        </config-file>
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+            <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <permission android:name="${applicationId}.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+        </config-file>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -75,13 +95,26 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
+        <config-file parent="WEGLicenseCode" target="*-Info.plist">
+            <string>YOUR-LICENSE-CODE</string>
+        </config-file>
+        <config-file parent="WEGApnsAutoRegister" target="*-Info.plist">
+            <true />
+        </config-file>
+        <config-file parent="WEGLogLevel" target="*-Info.plist">
+            <string>VERBOSE</string>
+        </config-file>
+        <config-file parent="UIBackgroundModes" target="*Info.plist">
+            <array>
+                <string>location</string>
+            </array>
+        </config-file>
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-device" spec="2.0.2" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.19" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
-    <plugin name="cordova-plugin-webengage" spec="0.0.8" />
-    <engine name="ios" spec="4.5.4" />
+    <plugin name="cordova-plugin-webengage" spec="^1.0.0" />
     <engine name="android" spec="7.0.0" />
 </widget>

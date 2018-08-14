@@ -45,22 +45,31 @@ export class HomePage {
   }
 
   setUserAttribute(customKey: string, customValue: string) {
-    if (customKey != null && customKey != "") {
+    if (customKey !== null && customKey !== "") {
       this.webengageUser.setAttribute(customKey, customValue);
     }
   }
 
   track(event: string, key1: string, value1: string, key2: string, value2: string) {
-    if (event != null && event != "") {
-      var attributes = {};
-      if (key1 != null && key1 != "") {
+    if (event && event !== null && event !== "") {
+      var attributes;
+      if (key1 !== null && key1 !== "") {
+        attributes = {};
         attributes[key1] = value1;
       }
-      if (key2 != null && key2 != "") {
+      if (key2 !== null && key2 !== "") {
+        if (!attributes) {
+          attributes = {};
+        }
         attributes[key2] = value2;
       }
     
-      this.webengage.track(event, attributes);
+      if (attributes) {
+        this.webengage.track(event, attributes);
+      } else {
+        this.webengage.track(event);
+      }
+      
     }
   }
 

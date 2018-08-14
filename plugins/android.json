@@ -19,10 +19,10 @@
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "ionic.webengage.test"
     },
-    "cordova-plugin-webengage": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "ionic.webengage.test"
     },
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-webengage": {
       "PACKAGE_NAME": "ionic.webengage.test"
     }
   },

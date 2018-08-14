@@ -42,7 +42,7 @@
   "cordova-plugin-webengage": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-webengage@0.0.8"
+      "id": "cordova-plugin-webengage@1.0.0"
     },
     "is_top_level": true,
     "variables": {}

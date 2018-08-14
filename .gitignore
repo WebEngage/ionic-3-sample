@@ -24,9 +24,12 @@ node_modules/*
 !node_modules/@ionic-native/
 node_modules/@ionic-native/*
 !node_modules/@ionic-native/webengage
+platforms/
+plugins/cordova-plugin-webengage/we_config.xml
 tmp/
 temp/
 hooks/
+www/
 $RECYCLE.BIN/
 
 .DS_Store
