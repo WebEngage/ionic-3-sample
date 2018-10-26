@@ -13,6 +13,13 @@ $ ionic cordova plugin add cordova-plugin-webengage --fetch
 $ npm install --save @ionic-native/webengage
 ```
 
+For iOS platform refer [Cordova SDK installation for iOS section](https://docs.webengage.com/docs/cordova-getting-started#section-follow-the-below-steps-for-ios-platform-)
+
+
+## Integration
+
+Refer [Cordova SDK integration section](https://docs.webengage.com/docs/cordova-getting-started#section-2-integrate-the-sdk)
+
 
 ## Initialization
 
