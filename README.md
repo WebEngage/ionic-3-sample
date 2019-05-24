@@ -9,9 +9,20 @@ The Ionic Sample App is tested for Ionic CLI versions 3.19.0, 3.20.0, 4.0.3 and 
 
 ```
 $ ionic cordova plugin add cordova-plugin-webengage --fetch
+```
 
+#### For ionic 5
+
+```
 $ npm install --save @ionic-native/webengage
 ```
+
+#### For ionic 4
+
+```
+$ npm install --save @ionic-native/webengage@4.20.0
+```
+
 
 For iOS platform refer [Cordova SDK installation for iOS section](https://docs.webengage.com/docs/cordova-getting-started#section-follow-the-below-steps-for-ios-platform-)
 
@@ -27,7 +38,7 @@ Import the following providers in your `src/app/app.module.ts` file as shown bel
 
 ```typescript
 ...
-import { Webengage, WebengageUser, WebengagePush, WebengageNotification } from '@ionic-native/webengage';
+import { Webengage, WebengageUser, WebengagePush, WebengageNotification } from '@ionic-native/webengage/ngx';
 
 @NgModule({
     ...
@@ -43,7 +54,7 @@ Now, initialize the WebEngage SDK in `src/app/app.component.ts` file as shown be
 
 ```typescript
 ...
-import { Webengage } from '@ionic-native/webengage';
+import { Webengage } from '@ionic-native/webengage/ngx';
 
 @Component({
   templateUrl: 'app.html'
@@ -79,7 +90,7 @@ You can track users as shown in the following example.
 
 ```typescript
 ...
-import { WebengageUser } from '@ionic-native/webengage';
+import { WebengageUser } from '@ionic-native/webengage/ngx';
 
 export class YourPage {
     ...
@@ -117,7 +128,7 @@ You can track events as shown in the following example.
 
 ```typescript
 ...
-import { Webengage } from '@ionic-native/webengage';
+import { Webengage } from '@ionic-native/webengage/ngx';
 
 export class YourPage {
     ...
